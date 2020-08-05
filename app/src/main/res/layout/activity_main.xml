@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_MainTrips"
+        android:layout_width="411dp"
+        android:layout_height="538dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_addTrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_addTrip"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/tv_notrips"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="No Trips have been added yet. Click on below '+' Icon to add one."
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_MainTrips"
+        app:layout_constraintEnd_toEndOf="@+id/rv_MainTrips"
+        app:layout_constraintStart_toStartOf="@+id/rv_MainTrips"
+        app:layout_constraintTop_toTopOf="@+id/rv_MainTrips" />
+</androidx.constraintlayout.widget.ConstraintLayout>
